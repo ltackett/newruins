@@ -48,6 +48,7 @@
 # end
 
 activate :blog do |blog|
+  blog.layout = "blog"
   blog.permalink = ":year-:month-:day-:title"
   blog.default_extension = ".haml"
 end

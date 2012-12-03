@@ -1,0 +1,21 @@
+<!doctype html>
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content:"IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    
+    %title
+      = data.page.title || "New Ruins"
+    
+    = stylesheet_link_tag "normalize", "all"
+    = javascript_include_tag  "all"
+
+  %body{class: page_classes, style: "background-image:url(/images/Umm_Rasas_House_ruins.JPG)"}
+    .header
+      %h1
+        New Ruins
+      %p
+        One day in the future, distant cultures will explore the crumbling towers and lush gardens of our long-lost community and marvel. We are New Ruins.
+      = partial "layouts/nav"
+    .content
+      = yield
