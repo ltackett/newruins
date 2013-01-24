@@ -3,6 +3,20 @@
 
 @import "base";
 
+// Element Classes
+// ============================================================================
+
+.bar-header {
+  background:     #ddfe38;
+  color:          #4d4d4d;
+  text-align:     center;
+  text-transform: uppercase;
+  font-weight:    bold;
+}
+
+// Layout
+// ============================================================================
+
 html { background: #5d5d5d; }
 
 body {
@@ -14,7 +28,6 @@ body {
   margin:       0 auto;
   border-left:  $border;
   border-right: $border;
-  overflow:     hidden
 }
 
 #main-header {
