@@ -4,18 +4,16 @@
     %meta{charset: "utf-8"}
     %meta{content:"IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
     
-    %title
-      = data.page.title || "New Ruins"
+    %title= data.page.title || "New Ruins"
     
     = stylesheet_link_tag "normalize", "all"
     = javascript_include_tag  "all"
 
   %body{class: page_classes}
     .header
-      %h1
-        New Ruins
-      %p
-        Oaxacan Permaculture Farm and Beach Hostel
+      %h1 New Ruins
+      %p Oaxacan Permaculture Farm and Beach Hostel
+      
       = partial "layouts/nav"
-    .content
-      = yield
+    
+    .content= yield
