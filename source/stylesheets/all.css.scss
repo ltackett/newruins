@@ -1,0 +1,70 @@
+//= require normalize
+//= require prettyPhoto
+
+@import "base";
+
+html { background: #5d5d5d; }
+
+body {
+  $border: 1px solid #000000;
+
+  background:   #4d4d4d;
+  min-width:    $main-width;
+  max-width:    1198px;
+  margin:       0 auto;
+  border-left:  $border;
+  border-right: $border;
+  overflow:     hidden
+}
+
+#main-header {
+  @include box-shadow(#000 0 0 10px);
+  background: #fff image-url('header.jpg') center bottom no-repeat;
+  height:     385px;
+
+  .inner {
+    position: relative;
+    width:    $main-width;
+    margin:   0 auto;
+  }
+
+  a {
+    color: #666666;
+    
+    &       { text-decoration: none; }
+    &:hover { text-decoration: underline; }
+  }
+
+  // Logo = Invisible link.
+  h1 {
+    display: inline;
+
+    a {
+      position:    absolute;
+      display:     block;
+      top:         60px;
+      left:        0;
+      width:       120px;
+      height:      70px;
+      text-indent: -999em;
+    }
+  }
+
+  ul.main-navigation {
+    position: absolute;
+    top:      70px;
+    right:    0;
+
+    li {
+      @include inline-block;
+      margin-left: 1em;
+
+      a { font-size: 1.2em; }
+    }
+  }
+}
+
+#content {
+  width:  $main-width;
+  margin: 0 auto;
+}

@@ -6,14 +6,15 @@
     
     %title= data.page.title || "New Ruins"
     
-    = stylesheet_link_tag "normalize", "all"
+    = stylesheet_link_tag "all"
     = javascript_include_tag  "all"
 
   %body{class: page_classes}
-    .header
-      %h1 New Ruins
-      %p Oaxacan Permaculture Farm and Beach Hostel
-      
-      = partial "layouts/nav"
+    #main-header
+      .inner
+        %h1
+          %a{href: '/'} New Ruins
+        
+        = partial "layouts/nav"
     
-    .content= yield
+    #content= yield
