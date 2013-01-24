@@ -56,9 +56,9 @@ end
 
 activate :directory_indexes
 
-set :css_dir, 'css'
+set :css_dir, 'stylesheets'
 
-set :js_dir, 'js'
+set :js_dir, 'javascripts'
 
 set :images_dir, 'img'
 
